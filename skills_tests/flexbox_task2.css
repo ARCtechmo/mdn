@@ -1,0 +1,35 @@
+/*MDN Flexbox Test Your Skills: task 2*/
+html {
+	font-family: sans-serif;
+}
+body {
+	margin: 0 auto;
+	width: 40em;
+}
+
+div {
+	border: 2px solid grey;
+	border-radius: 5px;
+	padding: 5px;
+}
+section {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+p {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-basis: 0;
+	flex-grow: 1;
+}
+p {
+	background-color: #007bff;
+	color: white;
+	height: 250px;
+	padding: 20px;
+	margin: 10px;
+	min-width: 100px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
+}

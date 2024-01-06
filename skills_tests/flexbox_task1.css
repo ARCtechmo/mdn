@@ -1,0 +1,45 @@
+/*MDN Flexbox Test Your Skills: task 1*/
+html {
+	font-family: sans-serif;
+}
+body {
+	margin: 0 auto;
+	width: 40em;
+}
+
+nav {
+	border: 2px solid grey;
+	border-radius: 10px;
+	padding: 5px;
+	width: 700px;
+}
+nav ul {
+	list-style: none;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding: 0;
+}
+nav li {
+	display: flex;
+	flex-basis: 0;
+	flex-grow: 1;
+	margin: 5px;
+}
+
+nav a {
+	background-color: blue;
+	color: white;
+	border: 1px solid black;
+	border-radius: 10px;
+	padding: 5px;
+	margin: 0px;
+	width: 125px;
+	height: 25px;
+	font-weight: bold;
+	text-align: center;
+	text-decoration: none;
+}
+nav a:nth-last-of-type(1) {
+	margin-left: 10px;
+}
