@@ -1,0 +1,27 @@
+body {
+	font-family: sans-serif;
+	width: 80%;
+}
+
+ul {
+	list-style: none;
+	border: 3px solid grey;
+}
+li {
+	margin: 40px 50px 40px 0;
+	padding: 15px;
+}
+a {
+	padding: 10px;
+	padding-right: 70%;
+	border: 3px solid grey;
+}
+a[title] {
+	border-color: pink;
+}
+a[href*="contact"] {
+	border-color: orange;
+}
+a[href^="https"] {
+	border-color: green;
+}
