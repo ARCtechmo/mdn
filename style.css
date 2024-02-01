@@ -1,41 +1,21 @@
-body {
-	color: green;
+@layer firstLayer, secondLayer;
+
+@layer firstLayer {
+	/*1-0-0*/
+	#addSpecificity {
+		background-color: blue;
+		color: white;
+		border-width: 5px;
+		border-style: dashed;
+	}
 }
 
-#pseudo {
-	color: green;
-}
-h1 {
-	color: purple;
-}
-p {
-	color: blue;
-}
-.main-heading {
-	color: red;
-}
-p::after {
-	content: "  Note: ";
-	font-weight: bold;
-	color: blueviolet;
-}
-.my-class-1 {
-	color: inherit;
-}
-.my-class-2 {
-	color: initial;
-}
-.my-class-3 {
-	color: unset;
-}
-
-h2 {
-	font-size: 2em;
-}
-
-.small {
-	font-size: 1em;
-}
-.bright {
-	color: rebeccapurple;
+@layer secondLayer {
+	/*1-0-1*/
+	p#addSpecificity {
+		background-color: green;
+		color: orange;
+		border-width: 10px;
+		border-style: dotted;
+	}
 }
