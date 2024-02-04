@@ -1,0 +1,17 @@
+/*1-1-3*/
+#outer div ul .nav a {
+	background-color: powderblue;
+	padding: 5px;
+	display: inline-block;
+	margin-bottom: 10px;
+}
+
+/*0-0-4*/
+div div li a {
+	color: rebeccapurple;
+}
+
+/*1-1-1*/
+#outer #inner .nav a {
+	background-color: white;
+}

@@ -1,0 +1,25 @@
+/*order of precedence 
+undeclared layers are take precedence over everything else
+the last layer declared takes precedence over previous layers*/
+@layer yellow, green, purple;
+
+@layer yellow {
+	/*1-1-3*/
+	#outer div ul .nav a {
+		padding: 5px;
+		display: inline-block;
+		margin-bottom: 10px;
+	}
+}
+@layer purple {
+	/*0-0-4*/
+	div div li a {
+		color: rebeccapurple;
+	}
+}
+@layer green {
+	/*0-0-1*/
+	a {
+		color: lightgreen;
+	}
+}
