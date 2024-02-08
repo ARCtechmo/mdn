@@ -1,0 +1,13 @@
+.box {
+	border: 2px solid gray;
+	padding: 1em;
+}
+/*using display: inline-block will prevent items
+from breaking onto a new line and also respect width and height*/
+.box span {
+	display: inline-block;
+	/* display: block; */
+	background-color: pink;
+	border: 5px solid black;
+	padding: 1em;
+}

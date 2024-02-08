@@ -1,0 +1,19 @@
+/* total width = 390;
+width 300 + 
+padding (left and right) 40 + 40
+border (left and right) 5 + 5
+ */
+.box {
+	border: 5px solid rebeccapurple;
+	background-color: lightgray;
+	padding: 40px;
+	margin: 40px;
+	width: 300px;
+	height: 150px;
+}
+/*match 390 total width using the border-box model, */
+/*alternate model already includes padding and border*/
+.alternate {
+	box-sizing: border-box;
+	width: 390px;
+}
