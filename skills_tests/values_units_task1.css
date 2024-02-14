@@ -1,0 +1,31 @@
+.wrapper {
+	border: 2px solid gray;
+	width: 40%;
+}
+
+ul {
+	list-style: none;
+}
+li {
+	border: 1px solid lightblue;
+	margin-right: 40px;
+	padding: 10px;
+}
+.hex,
+.rgb,
+.hsl {
+	margin-bottom: 25px;
+}
+
+.hex {
+	background-color: #86defa;
+}
+.rgb {
+	background-color: rgb(133, 219, 251);
+}
+.hsl {
+	background-color: hsl(196, 86%, 85%);
+}
+.transparency {
+	background-color: hsla(180, 100%, 50%, 0.6);
+}
