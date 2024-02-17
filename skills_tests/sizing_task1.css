@@ -1,0 +1,14 @@
+.box {
+	border: 5px solid black;
+}
+
+/*set minimum height to 100px so the box will expand as you add more text*/
+.box1 {
+	margin-bottom: 25px;
+	min-height: 100px;
+}
+/*fixed height and overflow content*/
+.box2 {
+	height: 100px;
+	overflow-y: scroll;
+}
