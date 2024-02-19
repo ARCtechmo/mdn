@@ -1,0 +1,21 @@
+/*behavior of replaced elements*/
+/*images do not stretch in a grid or flex layout*/
+/*the image is the replaced elements*/
+.wrapper {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 200px 200px;
+	gap: 20px;
+}
+
+.wrapper > div {
+	background-color: rebeccapurple;
+	border-radius: 0.5em;
+}
+
+/*force the image to stretch*/
+/*forcing the image to stretch causes distortion*/
+/* img {
+	width: 100%;
+	height: 100%;
+} */

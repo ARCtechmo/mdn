@@ -1,0 +1,48 @@
+/*sizing images*/
+.wrapper {
+	display: flex;
+	border: 1px solid gray;
+	width: 550px;
+	height: 400px;
+	margin-left: 100px;
+	margin-top: 50px;
+}
+.box {
+	border: 5px solid darkblue;
+	margin-top: 50px;
+}
+
+.small {
+	width: 200px;
+	height: 150px;
+	margin-left: 25px;
+	background-image: url(./balloons.jpg);
+	background-repeat: none;
+	background-size: 25px;
+}
+.large {
+	width: 150px;
+	height: 300px;
+	margin-left: 50px;
+	background-image: url(./balloons.jpg);
+	background-size: 150px;
+}
+.box2 {
+	border: 3px solid darkblue;
+	width: 200px;
+	height: 200px;
+	margin-left: 50px;
+	margin-top: 50px;
+}
+
+/*size an image to fit the box*/
+img {
+	height: 100%;
+	width: 100%;
+}
+.cover {
+	object-fit: cover;
+}
+.contain {
+	object-fit: contain;
+}
