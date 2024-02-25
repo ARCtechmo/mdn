@@ -1,122 +1,46 @@
-/* tables */
 
-/* Here are the most important points for tables and css 
+/*Business Card CSS*/
+/* General styles - put these straight into your stylesheet */
 
-Make your table markup as simple as possible, and keep things flexible, e.g. by using percentages, so the design is more responsive.
-    
-Use table-layout: fixed to create a more predictable table layout that allows you to easily set column widths by setting width on their headings (<th>).
-
-Use border-collapse: collapse to make table elements borders collapse into each other, producing a neater and easier to control look.
-
-Use <thead>, <tbody>, and <tfoot> to break up your table into logical chunks and provide extra places to apply CSS to, so it is easier to layer styles on top of one another if required.
-
-Use zebra striping to make alternative rows easier to read.
-
-Use text-align to line up your <th> and <td> text, to make things neater and easier to follow.
-
-*/
-
-/* spacing */
-/*A table-layout value of fixed is generally a good idea 
-to set on your table, as it makes the table behave a bit 
-more predictably by default. */
-
-/*With table-layout: fixed, you can size 
-your columns according to the width of their headings, */
-
-/*The entire column width follows the width of its heading, 
-making for a nice way to size your table columns.*/
-
-/*A width of 100% means the table will fill any container it
-is put in and be responsive although it would still need some
-more styling work to look good.*/
-
-/*A border-collapse value of collapse is standard best 
-practice for any table styling effort. By default, when 
-you set borders on table elements, they will all have 
-spacing between them, which does not look very nice */
-table {
-	table-layout: fixed;
-	width: 100%;
-	border-collapse: collapse;
-	border: 3px solid purple;
-}
-thead th:nth-child(1) {
-	width: 30%;
-}
-thead th:nth-child(2) {
-	width: 20%;
-}
-thead th:nth-child(3) {
-	width: 15%;
-}
-thead th:nth-child(4) {
-	width: 35%;
-}
-th,
-td {
-	padding: 20px;
-}
-
-/* typography */
-
-html {
-	font-family: "helvetica neue", helvetica, arial, sans-serif;
-}
-thead th,
-tfoot th {
-	font-family: "Rocky Salt", cursive;
-}
-th {
-	letter-spacing: 2px;
-}
-td {
-	letter-spacing: 1px;
-}
-tbody td {
-	text-align: center;
-}
-tfoot th {
-	text-align: right;
-}
-
-/* graphics and colors */
-thead tfoot {
-	background-image: url(leopard.jpg);
-	color: white;
-	text-shadow: 1px 1px 1px black;
-}
-thead th,
-tfoot th,
-tfoot td {
-	background: linear-gradient(to bottom, rgb(0 0 0 / 10%), rgb(0 0 0 / 50%));
-	border: 3px solid purple;
-}
-
-/* zebra striping */
-tbody tr:nth-child(odd) {
-	background-color: #ff33cc;
-}
-
-tbody tr:nth-child(even) {
-	background-color: #e495e4;
-}
-
-tbody tr {
-	background-image: url(noise.png);
-}
-
-table {
-	background-color: #ff33cc;
-}
-
-/* caption */
-caption {
-	font-family: "Rock Salt", cursive;
-	padding: 20px;
-	font-style: italic;
-	caption-side: bottom;
-	color: #666;
-	text-align: right;
-	letter-spacing: 1px;
-}
+body {
+	margin: 0;
+  }
+  
+  html {
+	font-family: 'Helvetica neue', Arial, 'sans serif';
+	font-size: 10px;
+	background-color: #ccc;
+  }
+  
+  /* Selectors to be matched up with rulesets */
+  
+  .card article img
+  .card footer
+  .card header
+  .card
+  
+  /* Rulesets to be matched up with selectors */
+  
+  {
+	width: 35em;
+	height: 22em;
+	margin: 5em auto;
+	background-colour: red;
+	border: 0.2em solid black;
+	border-radius: 1.5em;
+  }
+  
+  {
+	background-image: linear-gradient(to bottom,rgba(0,0,0,0.1), rgba(0,0,0,0));
+	border-radius: 1.5em 1.5em 0 0;
+  }
+  
+  {
+	background-image: linear-gradient(to bottom,rgba(0,0,0,0), rgba(0,0,0,0.1));
+	border-radius: 0 0 1.5em 1.5em;
+  }
+  
+  {
+	max-height: 100%
+	float: right;
+  }
