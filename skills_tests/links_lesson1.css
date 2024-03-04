@@ -1,0 +1,40 @@
+/* links */
+/* Note: the order of the links:
+a, a:link, a:visited, a:focus, a:hover, a:active*/
+body,
+html {
+	width: 300px;
+	margin: 0 auto;
+	font-size: 1.2rem;
+	font-family: sans-serif;
+}
+
+p {
+	font-size: 2rem;
+	text-align: center;
+	line-height: 1.4;
+}
+a {
+	outline-color: transparent;
+	text-decoration: none;
+	padding: 2px 1px 0;
+}
+a:link {
+	color: blue;
+}
+a:visited {
+	color: purple;
+}
+a:focus,
+a:hover {
+	border-bottom: 1px solid;
+}
+a:active {
+	color: red;
+}
+/*imbed icons in links*/
+a[href^="http"] {
+	background: url("./icons8-external-link-26.png") no-repeat 100% 0;
+	background-size: 16px 16px;
+	padding-right: 19px;
+}
