@@ -19,11 +19,10 @@ p {
 }
 
 /* completely remove the element from normal flow 
-the offsets calculated from the viewport;
-good for creating menuns that remain fixed
+the offsets have been calculated from the top and left of the page
 */
 .positioned {
-	position: fixed;
+	position: absolute;
 	top: 3rem;
 	left: 3rem;
 }

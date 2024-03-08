@@ -18,12 +18,11 @@ p {
 	border: 2px solid rgb(255 84 104);
 }
 
-/* completely remove the element from normal flow 
-the offsets calculated from the viewport;
-good for creating menuns that remain fixed
+/* move the affected element down and to the right;
+think of it as the element being pushed on its left and top sides.
 */
 .positioned {
-	position: fixed;
+	position: relative;
 	top: 3rem;
 	left: 3rem;
 }

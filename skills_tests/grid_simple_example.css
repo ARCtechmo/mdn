@@ -1,0 +1,25 @@
+.html {
+	font-size: 10px;
+}
+.wrapper {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-column: 100px 100px;
+	gap: 10px;
+}
+.wrapper > div {
+	border: 1px solid gray;
+	border-radius: 5px;
+	margin-top: 1rem;
+	height: 3rem;
+	padding: 5px;
+	text-align: center;
+}
+.wrapper div.box1 {
+	color: red;
+}
+
+/*attribute selector to target the "box*/
+.wrapper > [class*="box"] {
+	color: green;
+}
