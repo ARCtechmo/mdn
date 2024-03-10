@@ -1,0 +1,34 @@
+.html {
+	font-size: 10px;
+}
+
+body {
+	width: 50rem;
+	margin: 0 auto;
+}
+
+/*create the flex container*/
+section {
+	display: flex;
+}
+
+/*apply the spacing to the flex children*/
+/*Each <article> element has a value of 1 and will all take up
+an equal amount of the spare space left after properties like 
+padding and margin have been set. This value is proportionally shared among the flex items*/
+article {
+	/* specify a minimum size value*/
+	/*each flex child starts with 200px. After that, the 
+	remaining space is shared according to the proportion units*/
+	flex: 1 200px;
+}
+
+/*the third article takes up twice as much space as the others*/
+/*proportion calcuation: 1 +1 + 2 = 4 total units of space*/
+article:nth-last-of-type(3) {
+	flex: 2 200px;
+}
+
+h1 {
+	text-align: center;
+}

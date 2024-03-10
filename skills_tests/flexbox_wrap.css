@@ -1,0 +1,26 @@
+.html {
+	font-size: 10px;
+}
+
+body {
+	width: 50rem;
+	margin: 0 auto;
+}
+
+/*create the flex container*/
+/*flexbox children sometime overflow their content */
+/*flex-wrap solves this problem*/
+section {
+	display: flex;
+	flex-direction: row-reverse;
+	flex-wrap: wrap;
+}
+
+/*apply the spacing to the flex children*/
+/*each <article> is at least 200px*/
+article {
+	flex: 200px;
+}
+h1 {
+	text-align: center;
+}

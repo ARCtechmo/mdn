@@ -1,0 +1,39 @@
+.html {
+	font-size: 10px;
+}
+
+body {
+	width: 50rem;
+	margin: 0 auto;
+}
+button {
+	font-size: 1.8rem;
+	line-height: 1.5;
+	width: 15%;
+}
+div {
+	height: 10rem;
+	border: 1px solid black;
+}
+.container {
+	display: flex;
+	align-items: center; /*vertical alignment*/
+	justify-content: center; /*horizontal alignment*/
+}
+
+/*ordring flex items*/
+/*By default, all flex items have an order value of 0.*/
+
+/*Flex items with the same order value 
+will appear in their source order. */
+button:first-child {
+	/*Flex items with the same order 
+	value will appear in their source order. */
+	/* order: 1; */
+}
+
+button:last-child {
+	/*negative order values to
+	make items appear earlier than items whose value is 0*/
+	order: -1;
+}

@@ -1,0 +1,46 @@
+.html {
+	font-size: 10px;
+}
+
+body {
+	width: 50rem;
+	margin: 0 auto;
+}
+button {
+	font-size: 1.8rem;
+	line-height: 1.5;
+	width: 15%;
+}
+div {
+	height: 10rem;
+	border: 1px solid black;
+}
+/*horizontal and vertical alignment*/
+/*Vertical alignment: align-items controls where the flex items sit on the cross axis.*/
+/*Horizontal alignment: justify-content controls where the flex items sit on the main axis.*/
+
+/**NOTE TO SELF: play around with these to see the effect**/
+.container {
+	display: flex;
+
+	/*you need border dimensions to see the effect of align-items*/
+	align-items: center;
+	/* align-items: stretch; */
+	/* align-items: start; */
+	/* align-items: end; */
+
+	/*distributes all the items evenly along the main axis*/
+	/* justify-content: space-around; */
+	/* justify-content: start; */
+	justify-content: center;
+	/* justify-content: space-between; */
+	/* justify-content: space-evenly; */
+	/*The justify-items property is ignored in flexbox layouts.*/
+}
+
+/*Override  align-items behavior for individual flex items 
+by applying the align-self property to them.*/
+button:first-child {
+	/*vertical direction places it at the end*/
+	align-self: flex-end;
+}

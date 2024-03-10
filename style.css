@@ -6,24 +6,36 @@ body {
 	width: 50rem;
 	margin: 0 auto;
 }
-p {
-	background-color: rgb(207, 232, 220);
-	border: 2px solid rgb(79, 185, 227);
-	padding: 1rem;
-	margin: 1rem;
-	border-radius: 0.5rem;
+h1 {
+	text-align: center;
 }
-.positioned {
-	background: rgb(255 84 104 / 30%);
-	border: 2px solid rgb(255 84 104);
+section {
+	display: flex;
+}
+article {
+	flex: 1 200px; /*minimum width then grows*/
 }
 
-/* completely remove the element from normal flow 
-the offsets calculated from the viewport;
-good for creating menuns that remain fixed
-*/
-.positioned {
-	position: fixed;
-	top: 3rem;
-	left: 3rem;
+/*create a nested flex container*/
+/*give 3rd flex child more proportioned space*/
+article:nth-child(3) {
+	flex: 3 200px;
+	display: flex;
+	flex-flow: column;
+}
+
+/*create a nested flex container*/
+article:nth-child(3) div:first-child(1) {
+	flex: 1 100px;
+	display: flex;
+	flex-flow: row wrap;
+	align-items: center;
+	justify-content: space-around;
+}
+
+button {
+	flex: 1 auto;
+	margin: 5px;
+	font-size: 10px;
+	line-height: 1.5;
 }

@@ -1,0 +1,18 @@
+.html {
+	font-size: 10px;
+}
+
+body {
+	width: 50rem;
+	margin: 0 auto;
+}
+
+/*create the flex container*/
+/*the flex container is displayed as block-level content*/
+/*the <article> elements are children under the <section> element*/
+section {
+	display: flex;
+}
+h1 {
+	text-align: center;
+}
