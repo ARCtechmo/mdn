@@ -6,16 +6,19 @@ body {
 	width: 50rem;
 	margin: 0 auto;
 }
-ul {
-	list-style: none;
+.parent {
 	display: flex;
+	border: 1px solid gray;
+	height: 25rem;
+	align-items: center;
+	justify-content: center;
 }
-li {
+.child {
 	border: 1px solid;
-	border-radius: 10px;
 	background-color: rgb(77, 114, 152);
 	color: white;
 	font-weight: bold;
-	width: 50rem;
-	padding: 1rem;
+	width: 10rem;
+	height: 5rem;
+	text-align: center;
 }
