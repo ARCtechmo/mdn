@@ -11,7 +11,7 @@ body {
 	border-radius: 5px;
 	background-color: aquamarine;
 	padding: 5px;
-	/* width: 10rem; */
+	width: 10rem;
 }
 .container {
 	border: 1px solid gray;
@@ -24,10 +24,6 @@ body {
 	/*repeat sections of the track*/
 	/*simutaneously create the columsn and proportions*/
 	grid-template-columns: repeat(3, 1fr);
-
-	/*size the rows using a unit or auto */
-	/*helps with even sizing of the grid items*/
-	grid-auto-rows: 100px;
 
 	/*create gaps between columns*/
 	gap: 20px;

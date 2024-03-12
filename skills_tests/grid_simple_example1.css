@@ -1,0 +1,38 @@
+.html {
+	font-size: 10px;
+}
+
+body {
+	width: 50rem;
+	margin: 0 auto;
+}
+.container div {
+	border: 1px solid lightskyblue;
+	border-radius: 5px;
+	background-color: aquamarine;
+	padding: 5px;
+	width: 10rem;
+}
+.container {
+	border: 1px solid gray;
+	padding: 20px;
+	width: 40rem;
+	display: grid; /*this only give you a one column grid*/
+
+	/*add columns to the grid*/
+	grid-template-columns: 200px 200px 200px;
+
+	/*you can use fr units to add columns*/
+	/*fr units distribute space proportionally*/
+	/*allows the container to flexibly size grid rows and columns*/
+	grid-template-columns: 1fr 1fr 1fr;
+
+	/*change the proportion*/
+	grid-template-columns: 2fr 1fr 1fr;
+
+	/*create gaps between tracks*/
+	/*gap is short-hand gaps between both rows and rows*/
+	/*gaps can by any length unit or percentage*/
+	/*gaps cannot be an fr unit*/
+	gap: 20px;
+}
