@@ -1,0 +1,46 @@
+body {
+	width: 90%;
+	max-width: 900px;
+	margin: 2em auto;
+	font: 0.9em/1.2 Arial, Helvetica, sans-serif;
+}
+.container {
+	/*establish two columns*/
+	display: grid;
+
+	/*column 1 takes up 1 fraction of the available space*/
+	/*column 2 takes up 3 fraction of the available space*/
+	/*the second colunn is 3 times wider than the first*/
+	grid-template-columns: 1fr 3fr;
+	gap: 20px;
+}
+header,
+footer {
+	border: 2px solid rgb(79, 232, 220);
+	border-radius: 5px;
+	padding: 10px;
+	background-color: rgb(207, 232, 220);
+}
+aside {
+	border-right: 1px solid #999;
+}
+header {
+	/*grid item starts at column 1 and...
+	spans up to, but not including, column 3*/
+	grid-column: 1 / 3; /* span  2 columns */
+	grid-row: 1;
+}
+/*article starts on column 2 after the aside*/
+article {
+	grid-column: 2;
+	grid-row: 2;
+}
+/*aside starts on column 1 before the article*/
+aside {
+	grid-column: 1;
+	grid-row: 2;
+}
+footer {
+	grid-column: 1 / 3;
+	grid-row: 3;
+}

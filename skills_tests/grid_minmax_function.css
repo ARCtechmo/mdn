@@ -1,0 +1,37 @@
+.html {
+	font-size: 10px;
+}
+
+body {
+	width: 50rem;
+	margin: 0 auto;
+}
+.container div {
+	border: 1px solid lightskyblue;
+	border-radius: 5px;
+	background-color: aquamarine;
+	padding: 5px;
+	/* width: 10rem; */
+}
+.container {
+	border: 1px solid gray;
+	padding: 20px;
+	width: 40rem;
+
+	/*create the grid - one column*/
+	display: grid;
+
+	/*repeat sections of the track*/
+	/*simutaneously create the columsn and proportions*/
+	grid-template-columns: repeat(3, 1fr);
+
+	/*minmax() function*/
+	/*helps with even sizing of the grid items*/
+	/*sets a minimum and maximum size for a track*/
+	/*a track is the space betweeen two adjuacent grid lines*/
+	/*the minimum size is 100pixels but the maximum is auto*/
+	grid-auto-rows: (100px, auto);
+
+	/*create gaps between columns*/
+	gap: 20px;
+}
