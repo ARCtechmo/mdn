@@ -4,43 +4,18 @@ body {
 	margin: 2em auto;
 	font: 0.9em/1.2 Arial, Helvetica, sans-serif;
 }
-/*position using grid-template areas*/
-.container {
-	display: grid;
-
-	/*layout the grid area*/
-	/*etablish two columns*/
-	grid-template-areas:
-		"header header"
-		"sidebar content"
-		"footer footer";
-
-	/*establish two columns*/
-	/*start at col 1 and end up to, but not including col 3*/
-	grid-template-columns: 1fr 3fr;
-
-	gap: 20px;
-}
-header,
-footer {
-	border: 2px solid rgb(79, 185, 227);
-	background-color: rgb(207, 232, 220);
-	border-radius: 5px;
+.grid {
+	border: 2px solid gray;
 	padding: 5px;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	gap: 5px;
 }
-aside {
-	border-right: 1px solid #999;
-}
-/*now implement the grid areas*/
-header {
-	grid-area: header;
-}
-article {
-	grid-area: content;
-}
-aside {
-	grid-area: sidebar;
-}
-footer {
-	grid-area: footer;
+.grid div {
+	border: 1px solid;
+	border-radius: 5px;
+	background-color: rgb(53, 153, 181);
+	color: white;
+	font-weight: bolder;
+	padding: 12px;
 }
