@@ -5,17 +5,34 @@ body {
 	font: 0.9em/1.2 Arial, Helvetica, sans-serif;
 }
 .grid {
-	border: 2px solid gray;
-	padding: 5px;
+	border: 2px solid black;
+	padding: 10px;
 	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
-	gap: 5px;
+	grid-template-columns: 1fr 2fr;
+	grid-template-rows: 50px 50px 50px;
+	gap: 10px;
 }
 .grid div {
-	border: 1px solid;
-	border-radius: 5px;
-	background-color: rgb(53, 153, 181);
+	border: 2px solid;
+	border-radius: 10px;
+	background-color: rgb(32, 123, 176);
 	color: white;
 	font-weight: bolder;
-	padding: 12px;
+	padding: 10px;
+}
+.two .three {
+	grid-row: 2;
+}
+.two {
+	grid-column: 1;
+}
+.three {
+	grid-column: 2;
+}
+.four {
+	grid-column: 2;
+	grid-row: 3;
+}
+.one {
+	grid-column: 1/3;
 }
