@@ -1,92 +1,150 @@
-.el--1 {
-	background-color: blueviolet;
-}
-.el--2 {
-	background-color: orangered;
-}
-.el--3 {
-	background-color: green;
-}
-.el--4 {
-	background-color: goldenrod;
-}
-.el--5 {
-	background-color: palevioletred;
-}
-.el--6 {
-	background-color: steelblue;
-}
-.el--7 {
-	background-color: yellow;
-}
-.el--8 {
-	background-color: crimson;
+/*
+SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+*/
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
-.container--1 {
-	/* STARTER */
-	font-family: sans-serif;
-	background-color: #ddd;
-	font-size: 30px;
-	margin: 40px;
-	height: 600px;
+/* ------------------------ */
+/* GENERAL STYLES */
+/* ------------------------ */
+body {
+	font-family: "Inter", sans-serif;
+}
 
-	/* CSS GRID */
+.container {
+	width: 960px;
+	margin: 0 auto;
+}
+
+header,
+section {
+	margin-bottom: 48px;
+}
+
+h2 {
+	margin-bottom: 48px;
+	font-size: 36px;
+	letter-spacing: -0.5px;
+}
+
+.grid-3-cols {
 	display: grid;
-	/* grid-template-columns: 1fr 1fr 1fr 1fr; */
-	/* grid-template-rows: 250px 250px; */
-	grid-template-columns: repeat(4, 1fr);
-	grid-template-rows: 1fr 1fr;
-	gap: 25px;
-	row-gap: 60px;
-
-	/*temp*/
-	display: none;
-	/*temp*/
+	grid-template-columns: repeat(3, 1fr);
+	column-gap: 80px;
 }
 
-.container--1 .el {
-	text-align: center;
-	margin-top: 20px;
-}
+/* ------------------------ */
+/* COMPONENT STYLES */
+/* ------------------------ */
 
-.container--1 .el--8 {
-	grid-column: 2 / 3;
-	grid-row: 1 / 2;
-}
-.container--1 .el--2 {
-	grid-column: 1 / 2;
-	grid-row: 1 / 2;
-}
-
-/*align (vertical) and justify (horizontal) items and content*/
-/*use grid display settings in inspect to show the grid*/
-.container--2 {
-	/* STARTER */
-	font-family: sans-serif;
-	background-color: black;
-	font-size: 40px;
-	margin: 100px;
-	text-align: center;
-
-	width: auto;
-	height: 600px;
-
-	/* CSS GRID */
+/* HEADER */
+header {
 	display: grid;
-	grid-template-columns: 125px 200px 125px;
-	grid-template-rows: 250px 100px;
+	grid-template-columns: repeat(2, 1fr);
+	column-gap: 80px;
+	margin-top: 48px;
+}
 
-	/*align tracks inside the container */
-	justify-content: center;
-	align-content: center;
+.header-text-box {
+	align-self: center;
+}
 
-	/*align items inside cells*/
+h1 {
+	margin-bottom: 24px;
+	font-size: 44px; /* 44 / 52 / 62 */
+	line-height: 1.1; /*rule: go below 1.5*/
+	letter-spacing: -1px;
+}
+
+.header-text {
+	margin-bottom: 24px;
+	font-size: 18px;
+	line-height: 1.7;
+}
+
+img {
+	width: 100%;
+}
+
+/* FEATURES */
+.features-icon {
+}
+
+.features-title {
+	margin-bottom: 16px;
+	font-size: 20px;
+}
+
+.features-text {
+	font-size: 18px;
+	line-height: 1.7;
+}
+
+/* TESTIMONIAL */
+.testimonial-section {
+}
+
+.testimonial-box {
+	grid-column: 2 / -1;
+	align-self: center;
+}
+
+.testimonial-box h2 {
+	margin-bottom: 24px;
+	font-size: 24px;
+}
+
+.testimonial-text {
+	font-style: italic;
+	margin-bottom: 24px;
+	font-size: 18px;
+	line-height: 1.7;
+}
+
+/* CHAIRS */
+.chair-box {
+	padding: 24px;
+}
+
+h3 {
+	margin-bottom: 24px;
+	font-size: 20px;
+}
+
+.chair-details {
+	list-style: none;
+	margin-bottom: 24px;
+}
+
+.chair-details li {
+	display: flex;
 	align-items: center;
-	justify-items: center;
+	gap: 12px;
+	margin-bottom: 24px;
 }
-.container--2 .el--3 {
-	height: 150px;
-	align-self: end;
-	justify-self: end;
+
+.chair-details li:last-child {
+	margin-bottom: 0;
+}
+
+.chair-icon {
+}
+
+.chair-price {
+	display: flex;
+	justify-content: space-between;
+	font-size: 20px;
+}
+
+footer {
+	margin-bottom: 48px;
+	font-size: 12px;
 }
